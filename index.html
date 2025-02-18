@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asstes/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Conversor de Monedas</h1>
+
+    <input type="number" id="monto" placeholder="Ingrese monto en CLP">
+    
+    <select id="moneda">
+        <option value="dolar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="uf">Unidad de Fomento (UF)</option>
+        <option value="bitcoin">Bitcoin</option>
+    </select>
+
+    <button onclick="convertir()">Convertir</button>
+
+    <p id="resultado"></p>
+
+    <canvas id="historialChart"></canvas>
+
+    <script src="./asstes/js/script.js"></script>
+</body>
+</html>
